@@ -54,11 +54,11 @@ REG10    equ     10h   // in HEX
 REG11    equ     11h
 REG01    equ     1h
    
-refTemp		equ	0x20
+refTemp		equ	0x20	
 measuredTemp	equ	0x21
 contReg		equ	0x22
 		
-refTempCLN	equ	0x23
+refTempCLN	equ	0x23	// Clones of measuredTemp and refTemp
 measuredTempCLN equ	0x24
 	
 measValU equ 0x72   // Measured input in decimal
@@ -81,63 +81,63 @@ refValL  equ 0x60
 	MOVLW  0x00
 	MOVWF  PORTD, 0
     
-	MOVLW  refTempInput	    // Initialize and store values into reg 20,21,22
+	MOVLW  refTempInput	    // Initialize all registers, plus clones
 	MOVWF  refTemp, 0
 	MOVWF  refTempCLN, 0
 	MOVLW  measuredTempInput
 	MOVWF  measuredTemp, 0
-	MOVLW  0x00
+	MOVLW  0x00		    // Setting all used registers to zero
 	MOVWF  contReg, 0
 	MOVWF  REG10, 0
 	MOVWF  REG11, 0
 	
-	BTFSS  measuredTemp, 7, 0
-	GOTO   GREAT
+	BTFSS  measuredTemp, 7, 0   // Checks if measuredTemp is negative
+	GOTO   GREAT	
 	GOTO   NEGATIVES
 	
 	
 	ORG    0x350
 NEGATIVES:   NOP
-	NEGF   measuredTemp, 0
+	NEGF   measuredTemp, 0	    // Does 2's complement on measuredTemp
 	MOVLW  0x01
 	MOVWF  contReg, 0
-	MOVFF  measuredTemp, measuredTempCLN
+	MOVFF  measuredTemp, measuredTempCLN  // Sets clone to 2's complement
 	GOTO   LIGHT
     
 	ORG    0x50
-GREAT:	MOVLW  refTempInput
-	CPFSGT measuredTemp, 0
-	GOTO   LESS
+GREAT:	MOVLW  refTempInput	    // Compairs to see if refTemp is greater than  
+	CPFSGT measuredTemp, 0	    // measuredTemp, if so it sets LED 1 to be
+	GOTO   LESS		    // on and LED 2 to be off
 	GOTO   COOL
 	
 	ORG    0x100
-LESS:	MOVLW  refTempInput
-	CPFSLT measuredTemp, 0
-	GOTO   EQUAL
+LESS:	MOVLW  refTempInput	    // Compairs to see if refTemp is less than 
+	CPFSLT measuredTemp, 0	    // measuredTemp, if so it sets LED 2 to be 
+	GOTO   EQUAL		    // on and LED 1 to be off
 	GOTO   HEAT
 	
 	ORG    0x150
-EQUAL:	MOVLW  0x00
+EQUAL:	MOVLW  0x00		    // Sets LED toggle to all be off
 	MOVWF  contReg, 0
 	GOTO   LIGHT
 	
 	ORG    0x200
-HEAT:	MOVLW  0x01
+HEAT:	MOVLW  0x01		    // Turns on heat blower / LED 1
 	MOVWF  contReg, 0
 	GOTO   LIGHT
 	
 	ORG    0x250
-COOL:	MOVLW  0x02
-	MOVWF  contReg, 0
+COOL:	MOVLW  0x02		    // Turns on cooling fan / LED 2
+	MOVWF  contReg, 0 
 	GOTO   LIGHT
 	
 	ORG    0x300
-LIGHT:  MOVFF  contReg, PORTD
+LIGHT:  MOVFF  contReg, PORTD	    // Sets the LEDs to turn on
 	GOTO   CONVDEC1
     
 	ORG    0x400
-CONVDEC1:MOVLW  0x0A
-	CPFSEQ refTempCLN, 0
+CONVDEC1:MOVLW  0x0A		    // Transforms refTemp from hex to decimal
+	CPFSEQ refTempCLN, 0	    // and stores it into different registers
 	CPFSLT refTempCLN, 0
 	GOTO   SUB1
 	GOTO   ONES1
@@ -148,9 +148,9 @@ ONES1:	MOVFF  REG10, refValH
 	MOVFF  refTempCLN, refValL
 
 CONVDEC2:MOVLW  0x0A
-	CPFSEQ measuredTempCLN, 0
-	CPFSLT measuredTempCLN, 0
-	GOTO   SUB2
+	CPFSEQ measuredTempCLN, 0   // Transforms measuredTemp from hex to 
+	CPFSLT measuredTempCLN, 0   // decimal and stores it into different 
+	GOTO   SUB2		    // registers
 	GOTO   ONES2
 SUB2:	INCF   REG11, 1, 0
 	SUBWF  measuredTempCLN, 1, 0
@@ -163,5 +163,5 @@ ONES2:  MOVFF  REG11, measValH
 	
 	
 	ORG    0x500
-FINISH:	NOP
+FINISH:	NOP			    // Ends the program
 	END
