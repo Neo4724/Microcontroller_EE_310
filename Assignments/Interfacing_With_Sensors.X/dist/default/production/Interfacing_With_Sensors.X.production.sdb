@@ -1,0 +1,299 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F47K42 ]
+[d frameptr 16353 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\almod.c
+[v ___almod __almod `(l  1 e 4 0 ]
+"9 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aodiv.c
+[v ___aodiv __aodiv `(o  1 e 8 0 ]
+"9 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aomod.c
+[v ___aomod __aomod `(o  1 e 8 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\atdiv.c
+[v ___atdiv __atdiv `(m  1 e 3 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\atmod.c
+[v ___atmod __atmod `(m  1 e 3 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"9 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lodiv.c
+[v ___lodiv __lodiv `(uo  1 e 8 0 ]
+"9 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lomod.c
+[v ___lomod __lomod `(uo  1 e 8 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\ltdiv.c
+[v ___ltdiv __ltdiv `(um  1 e 3 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\ltmod.c
+[v ___ltmod __ltmod `(um  1 e 3 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul24.c
+[v ___tmul __tmul `(um  1 e 3 0 ]
+"15 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"95 C:\Users\neoka\MPLABXProjects\Interfacing_With_Sensors.X\main.c
+[v _INT0_ISR INT0_ISR `IIH(v  1 e 1 0 ]
+"102
+[v _initPIC initPIC `(v  1 e 1 0 ]
+"140
+[v _showDigit showDigit `(v  1 e 1 0 ]
+[v i2_showDigit showDigit `(v  1 e 1 0 ]
+"148
+[v _readPR1Digit readPR1Digit `(uc  1 e 1 0 ]
+"186
+[v _readPR2Digit readPR2Digit `(uc  1 e 1 0 ]
+"224
+[v _goodCode goodCode `(v  1 e 1 0 ]
+"231
+[v _badCode badCode `(v  1 e 1 0 ]
+"243
+[v _melodyISR melodyISR `(v  1 e 1 0 ]
+"268
+[v _main main `(v  1 e 1 0 ]
+[s S185 . 1 `uc 1 INT0IE 1 0 :1:0 
+`uc 1 ZCDIE 1 0 :1:1 
+`uc 1 ADIE 1 0 :1:2 
+`uc 1 ADTIE 1 0 :1:3 
+`uc 1 C1IE 1 0 :1:4 
+`uc 1 SMT1IE 1 0 :1:5 
+`uc 1 SMT1PRAIE 1 0 :1:6 
+`uc 1 SMT1PWAIE 1 0 :1:7 
+]
+"3351 C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/PIC18F-K_DFP/1.15.303/xc8\pic\include\proc/pic18f47k42.h
+[u S194 . 1 `S185 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES194  1 e 1 @14737 ]
+[s S28 . 1 `uc 1 INT0IF 1 0 :1:0 
+`uc 1 ZCDIF 1 0 :1:1 
+`uc 1 ADIF 1 0 :1:2 
+`uc 1 ADTIF 1 0 :1:3 
+`uc 1 C1IF 1 0 :1:4 
+`uc 1 SMT1IF 1 0 :1:5 
+`uc 1 SMT1PRAIF 1 0 :1:6 
+`uc 1 SMT1PWAIF 1 0 :1:7 
+]
+"3916
+[u S37 . 1 `S28 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES37  1 e 1 @14753 ]
+"4900
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @14809 ]
+"5347
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @14815 ]
+"8455
+[v _ANSELB ANSELB `VEuc  1 e 1 @14928 ]
+[s S138 . 1 `uc 1 WPUB0 1 0 :1:0 
+`uc 1 WPUB1 1 0 :1:1 
+`uc 1 WPUB2 1 0 :1:2 
+`uc 1 WPUB3 1 0 :1:3 
+`uc 1 WPUB4 1 0 :1:4 
+`uc 1 WPUB5 1 0 :1:5 
+`uc 1 WPUB6 1 0 :1:6 
+`uc 1 WPUB7 1 0 :1:7 
+]
+"8534
+[u S147 . 1 `S138 1 . 1 0 ]
+[v _WPUBbits WPUBbits `VES147  1 e 1 @14929 ]
+"9167
+[v _ANSELC ANSELC `VEuc  1 e 1 @14944 ]
+"9879
+[v _ANSELD ANSELD `VEuc  1 e 1 @14960 ]
+[s S97 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"46169
+[s S106 . 1 `uc 1 LC0 1 0 :1:0 
+`uc 1 LC1 1 0 :1:1 
+`uc 1 LC2 1 0 :1:2 
+`uc 1 LC3 1 0 :1:3 
+`uc 1 LC4 1 0 :1:4 
+`uc 1 LC5 1 0 :1:5 
+`uc 1 LC6 1 0 :1:6 
+`uc 1 LC7 1 0 :1:7 
+]
+"46169
+[u S115 . 1 `S97 1 . 1 0 `S106 1 . 1 0 ]
+"46169
+"46169
+[v _LATCbits LATCbits `VES115  1 e 1 @16316 ]
+"46254
+[v _LATD LATD `VEuc  1 e 1 @16317 ]
+[s S54 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"46497
+[u S63 . 1 `S54 1 . 1 0 ]
+"46497
+"46497
+[v _TRISBbits TRISBbits `VES63  1 e 1 @16323 ]
+[s S75 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"46559
+[u S84 . 1 `S75 1 . 1 0 ]
+"46559
+"46559
+[v _TRISCbits TRISCbits `VES84  1 e 1 @16324 ]
+"46604
+[v _TRISD TRISD `VEuc  1 e 1 @16325 ]
+[s S206 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"46777
+[u S215 . 1 `S206 1 . 1 0 ]
+"46777
+"46777
+[v _PORTBbits PORTBbits `VES215  1 e 1 @16331 ]
+[s S159 . 1 `uc 1 INT0EDG 1 0 :1:0 
+`uc 1 INT1EDG 1 0 :1:1 
+`uc 1 INT2EDG 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 IPEN 1 0 :1:5 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"47004
+[s S167 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 GIEH 1 0 :1:7 
+]
+"47004
+[u S170 . 1 `S159 1 . 1 0 `S167 1 . 1 0 ]
+"47004
+"47004
+[v _INTCON0bits INTCON0bits `VES170  1 e 1 @16338 ]
+"77 C:\Users\neoka\MPLABXProjects\Interfacing_With_Sensors.X\main.c
+[v _emergencyFlag emergencyFlag `VEuc  1 e 1 0 ]
+"82
+[v _segCode segCode `C[10]uc  1 e 10 0 ]
+"268
+[v _main main `(v  1 e 1 0 ]
+{
+"271
+[v main@secondDigit secondDigit `uc  1 a 1 18 ]
+"270
+[v main@firstDigit firstDigit `uc  1 a 1 17 ]
+"309
+} 0
+"186
+[v _readPR2Digit readPR2Digit `(uc  1 e 1 0 ]
+{
+"188
+[v readPR2Digit@count count `uc  1 a 1 14 ]
+"190
+[v readPR2Digit@idleLoops idleLoops `uc  1 a 1 13 ]
+"189
+[v readPR2Digit@prev prev `uc  1 a 1 12 ]
+"222
+} 0
+"148
+[v _readPR1Digit readPR1Digit `(uc  1 e 1 0 ]
+{
+"150
+[v readPR1Digit@count count `uc  1 a 1 14 ]
+"152
+[v readPR1Digit@idleLoops idleLoops `uc  1 a 1 13 ]
+"151
+[v readPR1Digit@prev prev `uc  1 a 1 12 ]
+"184
+} 0
+"140
+[v _showDigit showDigit `(v  1 e 1 0 ]
+{
+[v showDigit@digit digit `uc  1 p 1 wreg ]
+[v showDigit@digit digit `uc  1 p 1 wreg ]
+"142
+[v showDigit@digit digit `uc  1 p 1 10 ]
+"146
+} 1
+"102
+[v _initPIC initPIC `(v  1 e 1 0 ]
+{
+"138
+} 0
+"224
+[v _goodCode goodCode `(v  1 e 1 0 ]
+{
+"229
+} 0
+"231
+[v _badCode badCode `(v  1 e 1 0 ]
+{
+"233
+[v badCode@i i `uc  1 a 1 11 ]
+"241
+} 0
+"95
+[v _INT0_ISR INT0_ISR `IIH(v  1 e 1 0 ]
+{
+"100
+} 0
+"243
+[v _melodyISR melodyISR `(v  1 e 1 0 ]
+{
+"245
+[v melodyISR@i i `uc  1 a 1 4 ]
+"266
+} 0
+"140
+[v i2_showDigit showDigit `(v  1 e 1 0 ]
+{
+[v i2showDigit@digit digit `uc  1 p 1 wreg ]
+[v i2showDigit@digit digit `uc  1 p 1 wreg ]
+"142
+[v i2showDigit@digit digit `uc  1 p 1 1 ]
+"146
+} 1
